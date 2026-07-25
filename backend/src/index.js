@@ -10,9 +10,9 @@ import { clerkMiddleware } from '@clerk/express'
 import User from "./models/user.model.js";
 import { connectDB } from "./lib/db.js";
 import job from "./lib/cron.js";
-import clerkWebhook from "./webhooks/clerk.js";
+import clerkWebhook from "./webhooks/clerk.webhook.js";
 
-const app = express();
+const app = express(); 
 
 const PORT = process.env.PORT;
 const FRONTEND_URL = process.env.FRONTEND_URL;
